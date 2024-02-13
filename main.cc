@@ -55,6 +55,6 @@ int main()
 
     cout << endl;
 
-    cout << "Answer:20 15 14 -7" << endl;
+
     return 0;
 }
