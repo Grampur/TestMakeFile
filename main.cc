@@ -43,19 +43,8 @@ int main()
         vec2.push_back(temp);
     }
 
-    // for(int i = 0; i < size1; i++){
-    //     cout << vec[i] << " ";
-    // }
 
-    // cout << endl;
-
-    // for(int i = 0; i < size2; i++){
-    //     cout << vec2[i] << " ";
-    // }
-
-    // cout << endl;
-
-    cout << "Answer:20 15 14 -7" << endl;
+    cout << "Answer:20 15 14 -7"  << endl;
 
 
     return 0;

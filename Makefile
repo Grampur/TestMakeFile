@@ -1,12 +1,12 @@
-all: a.out
+all: main.exe
 
-a.out:
-	g++ -std=c++11 main.cc
+main.exe:
+    g++ -std=c++11 main.cc -o main.exe
 
 .PHONY: run
-run: a.out
-	@./a.out
+run: main.exe
+    @./main.exe
 
 .PHONY: clean
 clean:
-	rm a.out
+    rm main.exe
