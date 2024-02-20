@@ -1,12 +1,15 @@
 #!/bin/bash
 
+# Clean up before compiling
+make clean
+
 # Compile the program using the Makefile
 make
 
 # Check if compilation was successful
 if [ ! -f "./main.exe" ]; then
     echo "Compilation failed, main.exe not found."
-    exit
+    exit 1
 fi
 
 # Run the program with input00.txt and save the output to a temporary file
