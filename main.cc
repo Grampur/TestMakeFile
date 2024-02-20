@@ -44,6 +44,7 @@ int main()
     }
 
 
+    //only 1 test should pass, input00/output00. should display the issues with the failing test cases"
     cout << "Answer:20 15 14 -7"  << endl;
 
 
