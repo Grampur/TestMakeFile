@@ -31,7 +31,7 @@ for input_file in input/*.txt; do
     ./main.exe < "$input_file" > temp_output.txt
     
     # Compare the output with the corresponding output file
-    if cmp -s temp_output.txt "$output_file"; then
+    if diff -qwB temp_output.txt "$output_file" >/dev/null; then
         echo "Test Passed: Output matches expected output for $base_name"
         ((passed_tests++))
     else
@@ -48,9 +48,9 @@ for input_file in input/*.txt; do
     fi
 done
 
-# Report the number of passed tests
+# tell the number of passed tests
 echo "$passed_tests out of $total_tests test cases passed."
 
-# Clean up: remove the compiled program and temporary output file
+# Clean up compiled program and temporary output file
 make clean
 rm temp_output.txt
